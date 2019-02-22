@@ -1,0 +1,16 @@
+version: "3.2"
+
+services:
+  jupyter:
+    build: ./jupyter
+    tty: true
+    restart: always
+    stdin_open: true
+    ports:
+      - 8888:8888
+    volumes:
+      - ./jupyter:${main_dir}
+    env_file:
+      - ./jupyter/conf/secrets.env
+    entrypoint: /usr/bin/env bash
+    command: setup.sh

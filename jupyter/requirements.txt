@@ -1,0 +1,6 @@
+jupyter
+requests
+pandas
+numpy
+boto3
+jupyter_contrib_nbextensions
