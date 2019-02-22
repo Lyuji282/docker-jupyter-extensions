@@ -1,6 +1,6 @@
 # docker-jupter-extensions
 
-# Actions
+# Configure
 
 `docker-compose up -d`
 
@@ -9,3 +9,10 @@
 `docker logs ${container_name}`
 
 で、立ち上がったjupyterのログインに必要なtokenを確認します。
+
+
+`jupyter/setup.sh`
+
+
+にて、jupter extensionsで使用する、pluginを有効にする
+
